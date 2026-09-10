@@ -1,0 +1,11 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1440, "h": 8300, "print": "flow" },
+    { "file": "Paleta.dc.html", "x": 1620, "y": 0, "w": 1180, "h": 340 }
+  ],
+  "annotations": [
+    { "id": "note-main", "x": 0, "y": -80, "w": 500, "text": "Propuesta de landing page — Florilexio / Tortizorza (pixel art, paleta y fuente del juego)" },
+    { "id": "note-paleta", "x": 1620, "y": -80, "w": 500, "text": "Paleta y tipografía extraídas de las capturas" }
+  ],
+  "launch": { "view": "focused", "file": "Main.dc.html" }
+}

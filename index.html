@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Florilexio — Tortizorza</title>
+  <meta name="description" content="Florilexio es una aventura de exploración y recolección de Tortizorza. Cada hierba esconde un secreto. Añádelo a tu lista de deseos en Steam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="placeholder-box" style="width:40px;height:40px;border-radius:8px;font-size:8px;padding:2px;">[logo]</div>
+      <span class="brand-name">Florilexio</span>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+
+    <nav id="navLinks" class="nav-links" hidden>
+      <a href="#mundo">El mundo</a>
+      <a href="#galeria">Galería</a>
+      <a href="#estudio">Estudio</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="header-cta">
+      <a href="#" class="btn btn--cta btn--sm">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 2c-4 3-6 7-6 11a6 6 0 0 0 12 0c0-4-2-8-6-11z"/><path d="M12 8v13"/></svg>
+        <span>Wishlist</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <span class="hero-tag">psst&hellip; hay algo entre la hierba</span>
+          <h1>Cada hierba esconde un secreto.<br>Algunas también muerden.</h1>
+          <p class="lead">Florilexio es una aventura de exploración y recolección para quien salió una vez a por manzanilla y volvió tres horas después con una maldición y un amigo nuevo.</p>
+          <div class="hero-cta-wrap">
+            <a href="#" class="btn btn--cta btn--lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 2c-4 3-6 7-6 11a6 6 0 0 0 12 0c0-4-2-8-6-11z"/><path d="M12 8v13"/></svg>
+              Añadir a la lista de deseos en Steam
+            </a>
+            <span class="hero-note">[Disponible próximamente en Steam &mdash; fecha por confirmar]</span>
+          </div>
+        </div>
+        <div class="shot-frame">
+          <img src="images/screenshots/calle-noche.png" alt="Captura de Florilexio: una calle del pueblo de noche, con una burbuja de diálogo listando nombres de hierbas" width="1279" height="717">
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider"></div>
+
+    <!-- TRAILER -->
+    <section class="section section--alt" id="trailer">
+      <div class="container trailer-wrap">
+        <h2 class="section-title">Ver antes de creer</h2>
+        <p class="trailer-sub">Un adelanto de qué se siente perderse a propósito.</p>
+        <div class="placeholder-box trailer-frame">
+          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#386656" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><circle cx="12" cy="12" r="10"/><path d="M10 8l7 4-7 4V8z" fill="#386656" stroke="none"/></svg>
+          [Tráiler de Florilexio &mdash; próximamente]
+        </div>
+      </div>
+    </section>
+
+    <!-- MUNDO Y MECÁNICAS -->
+    <section class="section" id="mundo">
+      <div class="container">
+        <h2 class="section-title mundo-title">Un mundo hecho para perderse en él</h2>
+
+        <div class="feature-row">
+          <div class="feature-media shot-frame">
+            <img src="images/screenshots/parque-dia.png" alt="Captura de Florilexio: un parque durante el día, con una fuente y macetas de hierbas" width="1279" height="717" loading="lazy">
+          </div>
+          <div class="feature-copy">
+            <h3>Cada seto esconde algo</h3>
+            <p>El mapa de Florilexio no te lleva de la mano. Detrás de cada muro de piedra, cada claro raro y cada puerta que &laquo;seguro que no lleva a ningún sitio&raquo; hay una historia esperando &mdash; y a veces, alguien esperando que dejes de fisgonear.</p>
+            <a href="#" class="btn btn--cta btn--md">Wishlist en Steam</a>
+          </div>
+        </div>
+
+        <div class="feature-row feature-row--reverse">
+          <div class="feature-copy">
+            <h3>Sales a por hierba de San Juan. Vuelves con otra cosa.</h3>
+            <p>Recolecta, sécala, mézclala, o simplemente cárgala en la cesta mientras decides si de verdad quieres saber para qué sirve. El bucle de salir, explorar y volver premia la curiosidad tanto como la paciencia.</p>
+            <a href="#" class="btn btn--cta btn--md">Wishlist en Steam</a>
+          </div>
+          <div class="feature-media shot-frame">
+            <img src="images/screenshots/componer-ramo.png" alt="Captura de Florilexio: la pantalla de componer un ramo de hierbas recolectadas" width="1279" height="717" loading="lazy">
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-media placeholder-box" style="aspect-ratio:16/9;">[captura &mdash; sistema de magia]</div>
+          <div class="feature-copy">
+            <h3>La magia tiene efectos secundarios. Normalmente cómicos.</h3>
+            <p>Cada hechizo mal calculado, cada ingrediente confundido y cada secreto desenterrado tiene consecuencias &mdash; casi nunca las que esperabas, casi siempre motivo de una buena anécdota.</p>
+            <a href="#" class="btn btn--cta btn--md">Wishlist en Steam</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section section--alt" id="galeria">
+      <div class="container">
+        <h2 class="section-title">Un vistazo al mundo de Florilexio</h2>
+        <div class="gallery-grid">
+          <div class="shot-frame"><img src="images/screenshots/calle-noche.png" alt="Captura de Florilexio" loading="lazy"></div>
+          <div class="shot-frame"><img src="images/screenshots/parque-dia.png" alt="Captura de Florilexio" loading="lazy"></div>
+          <div class="shot-frame"><img src="images/screenshots/componer-ramo.png" alt="Captura de Florilexio" loading="lazy"></div>
+        </div>
+        <p class="gallery-note">+ más capturas muy pronto</p>
+      </div>
+    </section>
+
+    <!-- PARA QUIÉN -->
+    <section class="section" id="para-quien">
+      <div class="container" style="max-width:1100px;">
+        <h2 class="section-title">¿Te suena esto?</h2>
+        <div class="whofor-grid">
+          <div class="whofor-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4b8570" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M2 12c2-4 5-7 10-7s8 3 10 7c-2 4-5 7-10 7s-8-3-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            <p>Te enganchó el bucle de salir, recolectar y volver de <strong>Dredge</strong> &mdash; pero preferirías que lo que acecha en la oscuridad sea una cabra con muy malas pulgas en vez de un horror cósmico.</p>
+          </div>
+          <div class="whofor-card whofor-card--terracotta">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b1483c" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 2l2.4 6.9L21 11l-6.6 2.1L12 20l-2.4-6.9L3 11l6.6-2.1z"/></svg>
+            <p>De pequeño (o no tan pequeño) te perdiste horas en el mapa de <strong>A Link to the Past</strong> buscando la última cueva secreta, y todavía no lo has superado.</p>
+          </div>
+        </div>
+        <p class="whofor-closing">Si alguna de las dos te ha sacado una sonrisa, Florilexio es para ti.</p>
+      </div>
+    </section>
+
+    <!-- PRENSA -->
+    <section class="section section--alt" id="prensa">
+      <div class="container prensa-wrap">
+        <h2 class="section-title" style="font-size:32px;margin-bottom:6px;">Lo que dicen de Florilexio</h2>
+        <p class="prensa-sub">Próximamente &mdash; o eso esperamos.</p>
+        <div class="prensa-logos">
+          <div class="placeholder-box">[logo medio 1]</div>
+          <div class="placeholder-box">[logo medio 2]</div>
+          <div class="placeholder-box">[logo medio 3]</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTUDIO -->
+    <section class="section" id="estudio">
+      <div class="container estudio-grid" style="max-width:1100px;">
+        <div class="placeholder-box estudio-photo">[foto del equipo]</div>
+        <div class="estudio-copy">
+          <h2>Somos Tortizorza</h2>
+          <p>[Aquí va la historia real: quiénes sois, cuántos sois, dónde estáis, y por qué decidisteis que un juego sobre recolectar hierba de San Juan con muy mala suerte era una buena idea. Esta sección funciona mejor si sois vosotros de verdad &mdash; con el mismo tono y humor que el resto de la web &mdash; y no una biografía genérica de estudio.]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container faq-wrap">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>¿En qué plataformas estará disponible?</h3>
+            <p>[Plataformas por confirmar &mdash; Steam (PC) previsto]</p>
+          </div>
+          <div class="faq-item">
+            <h3>¿Cuándo sale?</h3>
+            <p>[Fecha de lanzamiento por confirmar]</p>
+          </div>
+          <div class="faq-item">
+            <h3>¿Cuánto costará?</h3>
+            <p>[Precio por confirmar]</p>
+          </div>
+          <div class="faq-item">
+            <h3>¿En qué idiomas estará disponible?</h3>
+            <p>[Idiomas por confirmar]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS KIT -->
+    <section class="section presskit-wrap" id="presskit">
+      <h2>¿Eres prensa o creador de contenido?</h2>
+      <p>Descarga capturas en alta resolución, el logo del estudio y una hoja de datos del juego.</p>
+      <a href="#" class="btn btn--ghost">Descargar press kit</a>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section section--alt" id="newsletter">
+      <div class="container newsletter-wrap">
+        <h2>Sigue la pista</h2>
+        <p>Entérate de cada actualización antes que nadie &mdash; sin spam, lo prometemos (bueno, casi).</p>
+        <form class="newsletter-form" action="#" method="post">
+          <label for="email" style="position:absolute;left:-9999px;">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+          <button type="submit" class="btn btn--cta btn--md">Suscribirme</button>
+        </form>
+        <a href="#" class="btn btn--dark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.3 5.3c-1.4-.6-2.8-1-4.3-1.3-.2.4-.4.8-.6 1.3-1.6-.2-3.1-.2-4.7 0-.2-.4-.4-.9-.6-1.3-1.5.3-2.9.7-4.3 1.3C2.4 9.1 1.7 12.8 2 16.5c1.7 1.3 3.4 2 5 2.5.4-.6.8-1.2 1.1-1.9-.6-.2-1.2-.5-1.7-.9.1-.1.3-.2.4-.3 3.3 1.5 6.9 1.5 10.2 0 .1.1.3.2.4.3-.5.4-1.1.6-1.7.9.3.7.7 1.3 1.1 1.9 1.6-.5 3.3-1.3 5-2.5.4-4.3-.7-8-2.5-11.2zM9 14.2c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9zm6 0c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9z"/></svg>
+          Únete al Discord
+        </a>
+      </div>
+    </section>
+
+    <div class="road-divider"></div>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+      <div class="container">
+        <h2>¿Listo para perderte un rato?</h2>
+        <a href="#" class="btn btn--cta btn--lg">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 2c-4 3-6 7-6 11a6 6 0 0 0 12 0c0-4-2-8-6-11z"/><path d="M12 8v13"/></svg>
+          Añadir a la lista de deseos en Steam
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="placeholder-box" style="width:32px;height:32px;border-radius:6px;font-size:7px;padding:2px;opacity:.85;">[logo]</div>
+        <span>Tortizorza</span>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="X (Twitter)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.7L4.7 22H1.6l8.1-9.3L1 2h7l4.9 6.1L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg></a>
+        <a href="#" aria-label="Discord"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.3 5.3c-1.4-.6-2.8-1-4.3-1.3-.2.4-.4.8-.6 1.3-1.6-.2-3.1-.2-4.7 0-.2-.4-.4-.9-.6-1.3-1.5.3-2.9.7-4.3 1.3C2.4 9.1 1.7 12.8 2 16.5c1.7 1.3 3.4 2 5 2.5.4-.6.8-1.2 1.1-1.9-.6-.2-1.2-.5-1.7-.9.1-.1.3-.2.4-.3 3.3 1.5 6.9 1.5 10.2 0 .1.1.3.2.4.3-.5.4-1.1.6-1.7.9.3.7.7 1.3 1.1 1.9 1.6-.5 3.3-1.3 5-2.5.4-4.3-.7-8-2.5-11.2zM9 14.2c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9zm6 0c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9z"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8c-1-.7-1.6-1.8-1.7-3H12v13.4c0 1.4-1.1 2.5-2.5 2.5S7 17.6 7 16.2s1.1-2.5 2.5-2.5c.3 0 .5 0 .8.1v-2.9c-.3 0-.5-.1-.8-.1-3 0-5.4 2.4-5.4 5.4S6.5 21.6 9.5 21.6s5.4-2.4 5.4-5.4V9.1c1.1.8 2.5 1.3 4 1.3V7.5c-.8 0-1.6-.2-2.3-.6z"/></svg></a>
+      </div>
+      <p class="legal">&copy; 2026 Tortizorza. [Aviso legal] &middot; [Política de privacidad]</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

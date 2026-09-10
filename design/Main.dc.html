@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #4b8570; text-decoration: none; }
+    a:hover { color: #386656; }
+    .cta-btn { transition: filter .15s ease, transform .15s ease; }
+    .cta-btn:hover { filter: brightness(0.92); transform: translateY(-1px); }
+    .cta-btn-ghost:hover { background-color: #e7dfc4 !important; }
+    .jersey { font-family: 'Jersey 10', ui-monospace, monospace; letter-spacing: 0.3px; }
+    .placeholder-box {
+      border: 3px solid #386656;
+      background: repeating-linear-gradient(135deg, #e7dfc4, #e7dfc4 10px, #ddd3ae 10px, #ddd3ae 20px);
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      color: #386656; font-family: 'Jersey 10', monospace; font-size: 18px; padding: 16px;
+      border-radius: 10px; position: relative;
+    }
+    .placeholder-box::before, .placeholder-box::after {
+      content: ''; position: absolute; width: 12px; height: 12px; background: #dba43f;
+    }
+    .placeholder-box::before { top: -3px; left: -3px; }
+    .placeholder-box::after { bottom: -3px; right: -3px; }
+    .shot-frame { border: 4px solid #14141c; border-radius: 10px; box-shadow: 7px 7px 0 #386656; overflow: hidden; }
+    .shot-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .road-divider { height: 10px; background: #6b6f78; position: relative; }
+    .road-divider::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 2px; transform: translateY(-50%); background-image: repeating-linear-gradient(to right, #f0ede0 0 16px, transparent 16px 32px); }
+    @media (max-width: 640px) {
+      .hero-grid { grid-template-columns: 1fr !important; }
+      .feature-row { grid-template-columns: 1fr !important; }
+      .gallery-grid { grid-template-columns: 1fr !important; }
+      .whofor-grid { grid-template-columns: 1fr !important; }
+      .nav-links { display: none !important; }
+      h1 { font-size: 40px !important; }
+    }
+  </style>
+</helmet>
+
+<div id="page" style="font-family: 'Jersey 10', monospace; background: #f5efdc; color: #263226; width: 100%; overflow: hidden;">
+
+  <!-- NAV -->
+  <header style="position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; padding: 14px 48px; background: #f5efdcee; backdrop-filter: blur(6px); border-bottom: 3px solid #386656;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <div class="placeholder-box" style="width: 40px; height: 40px; border-radius: 8px; font-size: 8px; padding: 2px;">[logo]</div>
+      <span class="jersey" style="font-weight: 400; font-size: 26px; color: #2b4a3d; letter-spacing: 1px;">Florilexio</span>
+    </div>
+    <nav class="nav-links" style="display: flex; align-items: center; gap: 32px;">
+      <a href="#mundo" class="jersey" style="font-size: 19px; color: #263226;">El mundo</a>
+      <a href="#galeria" class="jersey" style="font-size: 19px; color: #263226;">Galería</a>
+      <a href="#estudio" class="jersey" style="font-size: 19px; color: #263226;">Estudio</a>
+      <a href="#faq" class="jersey" style="font-size: 19px; color: #263226;">FAQ</a>
+    </nav>
+    <a href="#" class="cta-btn jersey" style="display: flex; align-items: center; gap: 8px; background-color: {{ctaColor}}; color: #2b1c05; font-size: 18px; padding: 9px 18px; border-radius: 999px; border: 2px solid #14141c;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 2c-4 3-6 7-6 11a6 6 0 0 0 12 0c0-4-2-8-6-11z"/><path d="M12 8v13"/></svg>
+      Wishlist
+    </a>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" style="padding: 72px 48px 64px; display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; max-width: 1240px; margin: 0 auto; align-items: center;" class="hero-grid">
+    <div style="display: flex; flex-direction: column; gap: 22px; align-items: flex-start;">
+      <span class="jersey" style="font-size: 22px; color: #d1668a; transform: rotate(-2deg); display: inline-block;">psst&hellip; hay algo entre la hierba</span>
+      <h1 class="jersey" style="font-weight: 400; font-size: 58px; line-height: 1.05; margin: 0; color: #263226;">Cada hierba esconde un secreto.<br>Algunas también muerden.</h1>
+      <p style="font-family: 'Jersey 10', monospace; font-size: 20px; line-height: 1.55; color: #3f5142; max-width: 46ch; margin: 0;">Florilexio es una aventura de exploración y recolección para quien salió una vez a por manzanilla y volvió tres horas después con una maldición y un amigo nuevo.</p>
+      <div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-start;">
+        <a href="#" class="cta-btn jersey" style="display: flex; align-items: center; gap: 10px; background-color: {{ctaColor}}; color: #2b1c05; font-size: 21px; padding: 15px 28px; border-radius: 999px; border: 3px solid #14141c; box-shadow: 0 6px 0 #14141c;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 2c-4 3-6 7-6 11a6 6 0 0 0 12 0c0-4-2-8-6-11z"/><path d="M12 8v13"/></svg>
+          Añadir a la lista de deseos en Steam
+        </a>
+        <span style="font-family: 'Jersey 10', monospace; font-size: 16px; color: #5c6a5e;">[Disponible próximamente en Steam &mdash; fecha por confirmar]</span>
+      </div>
+    </div>
+    <div class="shot-frame" style="width: 100%; aspect-ratio: 16/9;">
+      <img src="1.png" alt="Captura de Florilexio: calle de noche">
+    </div>
+  </section>
+
+  <div class="road-divider"></div>
+
+  <!-- TRAILER -->
+  <section id="trailer" style="padding: 64px 48px; background: #e7dfc4;">
+    <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center;">
+      <h2 class="jersey" style="font-weight: 400; font-size: 38px; margin: 0; color: #263226;">Ver antes de creer</h2>
+      <p style="font-family: 'Jersey 10', monospace; font-size: 19px; color: #4a5a4c; margin: 0 0 16px;">Un adelanto de qué se siente perderse a propósito.</p>
+      <div class="placeholder-box" style="width: 100%; aspect-ratio: 16/9; font-size: 18px; flex-direction: column; gap: 10px;">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#386656" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><circle cx="12" cy="12" r="10"/><path d="M10 8l7 4-7 4V8z" fill="#386656" stroke="none"/></svg>
+        [Tráiler de Florilexio &mdash; próximamente]
+      </div>
+    </div>
+  </section>
+
+  <!-- MUNDO Y MECÁNICAS -->
+  <section id="mundo" style="padding: 80px 48px 32px; max-width: 1240px; margin: 0 auto;">
+    <h2 class="jersey" style="font-weight: 400; font-size: 40px; margin: 0 0 52px; text-align: center; color: #263226;">Un mundo hecho para perderse en él</h2>
+
+    <!-- sub 1: exploración -->
+    <div class="feature-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 68px;">
+      <div class="shot-frame" style="width: 100%; aspect-ratio: 16/9; order: 1;">
+        <img src="2.png" alt="Captura de Florilexio: parque de día">
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start; order: 2;">
+        <h3 class="jersey" style="font-weight: 400; font-size: 29px; margin: 0; color: #2b4a3d;">Cada seto esconde algo</h3>
+        <p style="font-family: 'Jersey 10', monospace; font-size: 18px; line-height: 1.55; color: #3f5142; margin: 0;">El mapa de Florilexio no te lleva de la mano. Detrás de cada muro de piedra, cada claro raro y cada puerta que &laquo;seguro que no lleva a ningún sitio&raquo; hay una historia esperando &mdash; y a veces, alguien esperando que dejes de fisgonear.</p>
+        <a href="#" class="cta-btn jersey" style="display: flex; align-items: center; gap: 8px; background-color: {{ctaColor}}; color: #2b1c05; font-size: 17px; padding: 9px 20px; border-radius: 999px; border: 2px solid #14141c; margin-top: 4px;">Wishlist en Steam</a>
+      </div>
+    </div>
+
+    <!-- sub 2: recolección -->
+    <div class="feature-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 68px;">
+      <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start; order: 1;">
+        <h3 class="jersey" style="font-weight: 400; font-size: 29px; margin: 0; color: #2b4a3d;">Sales a por hierba de San Juan. Vuelves con otra cosa.</h3>
+        <p style="font-family: 'Jersey 10', monospace; font-size: 18px; line-height: 1.55; color: #3f5142; margin: 0;">Recolecta, sécala, mézclala, o simplemente cárgala en la cesta mientras decides si de verdad quieres saber para qué sirve. El bucle de salir, explorar y volver premia la curiosidad tanto como la paciencia.</p>
+        <a href="#" class="cta-btn jersey" style="display: flex; align-items: center; gap: 8px; background-color: {{ctaColor}}; color: #2b1c05; font-size: 17px; padding: 9px 20px; border-radius: 999px; border: 2px solid #14141c; margin-top: 4px;">Wishlist en Steam</a>
+      </div>
+      <div class="shot-frame" style="width: 100%; aspect-ratio: 16/9; order: 2;">
+        <img src="3.png" alt="Captura de Florilexio: componer un ramo de hierbas">
+      </div>
+    </div>
+
+    <!-- sub 3: magia -->
+    <div class="feature-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+      <div class="placeholder-box" style="width: 100%; aspect-ratio: 16/9; order: 1;">[captura &mdash; sistema de magia]</div>
+      <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start; order: 2;">
+        <h3 class="jersey" style="font-weight: 400; font-size: 29px; margin: 0; color: #2b4a3d;">La magia tiene efectos secundarios. Normalmente cómicos.</h3>
+        <p style="font-family: 'Jersey 10', monospace; font-size: 18px; line-height: 1.55; color: #3f5142; margin: 0;">Cada hechizo mal calculado, cada ingrediente confundido y cada secreto desenterrado tiene consecuencias &mdash; casi nunca las que esperabas, casi siempre motivo de una buena anécdota.</p>
+        <a href="#" class="cta-btn jersey" style="display: flex; align-items: center; gap: 8px; background-color: {{ctaColor}}; color: #2b1c05; font-size: 17px; padding: 9px 20px; border-radius: 999px; border: 2px solid #14141c; margin-top: 4px;">Wishlist en Steam</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" style="padding: 80px 48px; background: #e7dfc4;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <h2 class="jersey" style="font-weight: 400; font-size: 38px; margin: 0 0 36px; text-align: center; color: #263226;">Un vistazo al mundo de Florilexio</h2>
+      <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+        <div class="shot-frame" style="aspect-ratio: 16/9;"><img src="1.png" alt="Captura de Florilexio"></div>
+        <div class="shot-frame" style="aspect-ratio: 16/9;"><img src="2.png" alt="Captura de Florilexio"></div>
+        <div class="shot-frame" style="aspect-ratio: 16/9;"><img src="3.png" alt="Captura de Florilexio"></div>
+      </div>
+      <p style="text-align: center; font-family: 'Jersey 10', monospace; font-size: 18px; color: #4a5a4c; margin: 22px 0 0;">+ más capturas muy pronto</p>
+    </div>
+  </section>
+
+  <!-- PARA QUIÉN -->
+  <section id="para-quien" style="padding: 80px 48px; max-width: 1100px; margin: 0 auto;">
+    <h2 class="jersey" style="font-weight: 400; font-size: 38px; margin: 0 0 36px; text-align: center; color: #263226;">¿Te suena esto?</h2>
+    <div class="whofor-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 26px;">
+      <div style="background: #fdfaf0; border: 3px solid #386656; border-radius: 14px; padding: 26px; display: flex; flex-direction: column; gap: 12px; box-shadow: 6px 6px 0 #cfc39b;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4b8570" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M2 12c2-4 5-7 10-7s8 3 10 7c-2 4-5 7-10 7s-8-3-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <p style="font-family: 'Jersey 10', monospace; font-size: 18px; line-height: 1.55; margin: 0; color: #33422f;">Te enganchó el bucle de salir, recolectar y volver de <strong>Dredge</strong> &mdash; pero preferirías que lo que acecha en la oscuridad sea una cabra con muy malas pulgas en vez de un horror cósmico.</p>
+      </div>
+      <div style="background: #fdfaf0; border: 3px solid #b1483c; border-radius: 14px; padding: 26px; display: flex; flex-direction: column; gap: 12px; box-shadow: 6px 6px 0 #cfc39b;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b1483c" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 2l2.4 6.9L21 11l-6.6 2.1L12 20l-2.4-6.9L3 11l6.6-2.1z"/></svg>
+        <p style="font-family: 'Jersey 10', monospace; font-size: 18px; line-height: 1.55; margin: 0; color: #33422f;">De pequeño (o no tan pequeño) te perdiste horas en el mapa de <strong>A Link to the Past</strong> buscando la última cueva secreta, y todavía no lo has superado.</p>
+      </div>
+    </div>
+    <p class="jersey" style="text-align: center; font-size: 24px; color: #d1668a; margin: 0;">Si alguna de las dos te ha sacado una sonrisa, Florilexio es para ti.</p>
+  </section>
+
+  <!-- PRENSA -->
+  <section id="prensa" style="padding: 64px 48px; background: #e7dfc4;">
+    <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+      <h2 class="jersey" style="font-weight: 400; font-size: 32px; margin: 0 0 6px; color: #263226;">Lo que dicen de Florilexio</h2>
+      <p style="font-family: 'Jersey 10', monospace; font-size: 17px; color: #55655a; margin: 0 0 28px;">Próximamente &mdash; o eso esperamos.</p>
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <div class="placeholder-box" style="width: 160px; height: 60px; opacity: .65; font-size: 13px;">[logo medio 1]</div>
+        <div class="placeholder-box" style="width: 160px; height: 60px; opacity: .65; font-size: 13px;">[logo medio 2]</div>
+        <div class="placeholder-box" style="width: 160px; height: 60px; opacity: .65; font-size: 13px;">[logo medio 3]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTUDIO -->
+  <section id="estudio" style="padding: 80px 48px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center;" class="hero-grid">
+    <div class="placeholder-box" style="width: 100%; aspect-ratio: 4/3;">[foto del equipo]</div>
+    <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start;">
+      <h2 class="jersey" style="font-weight: 400; font-size: 34px; margin: 0; color: #263226;">Somos Tortizorza</h2>
+      <p style="font-family: 'Jersey 10', monospace; font-size: 18px; line-height: 1.55; color: #3f5142; margin: 0;">[Aquí va la historia real: quiénes sois, cuántos sois, dónde estáis, y por qué decidisteis que un juego sobre recolectar hierba de San Juan con muy mala suerte era una buena idea. Esta sección funciona mejor si sois vosotros de verdad &mdash; con el mismo tono y humor que el resto de la web &mdash; y no una biografía genérica de estudio.]</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="padding: 80px 48px; background: #e7dfc4;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2 class="jersey" style="font-weight: 400; font-size: 38px; margin: 0 0 36px; text-align: center; color: #263226;">Preguntas frecuentes</h2>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #fdfaf0; border: 2px solid #386656; border-radius: 10px; padding: 18px 22px;">
+          <p class="jersey" style="font-weight: 400; font-size: 19px; margin: 0 0 4px; color: #263226;">¿En qué plataformas estará disponible?</p>
+          <p style="font-family: 'Jersey 10', monospace; font-size: 17px; margin: 0; color: #55655a;">[Plataformas por confirmar &mdash; Steam (PC) previsto]</p>
+        </div>
+        <div style="background: #fdfaf0; border: 2px solid #386656; border-radius: 10px; padding: 18px 22px;">
+          <p class="jersey" style="font-weight: 400; font-size: 19px; margin: 0 0 4px; color: #263226;">¿Cuándo sale?</p>
+          <p style="font-family: 'Jersey 10', monospace; font-size: 17px; margin: 0; color: #55655a;">[Fecha de lanzamiento por confirmar]</p>
+        </div>
+        <div style="background: #fdfaf0; border: 2px solid #386656; border-radius: 10px; padding: 18px 22px;">
+          <p class="jersey" style="font-weight: 400; font-size: 19px; margin: 0 0 4px; color: #263226;">¿Cuánto costará?</p>
+          <p style="font-family: 'Jersey 10', monospace; font-size: 17px; margin: 0; color: #55655a;">[Precio por confirmar]</p>
+        </div>
+        <div style="background: #fdfaf0; border: 2px solid #386656; border-radius: 10px; padding: 18px 22px;">
+          <p class="jersey" style="font-weight: 400; font-size: 19px; margin: 0 0 4px; color: #263226;">¿En qué idiomas estará disponible?</p>
+          <p style="font-family: 'Jersey 10', monospace; font-size: 17px; margin: 0; color: #55655a;">[Idiomas por confirmar]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS KIT -->
+  <section id="presskit" style="padding: 60px 48px; max-width: 900px; margin: 0 auto; text-align: center;">
+    <h2 class="jersey" style="font-weight: 400; font-size: 30px; margin: 0 0 6px; color: #263226;">¿Eres prensa o creador de contenido?</h2>
+    <p style="font-family: 'Jersey 10', monospace; font-size: 17px; color: #55655a; margin: 0 0 20px;">Descarga capturas en alta resolución, el logo del estudio y una hoja de datos del juego.</p>
+    <a href="#" class="cta-btn cta-btn-ghost jersey" style="display: inline-flex; align-items: center; gap: 8px; background: transparent; border: 3px solid #386656; color: #2b4a3d; font-size: 18px; padding: 11px 24px; border-radius: 999px;">Descargar press kit</a>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" style="padding: 64px 48px; background: #e7dfc4;">
+    <div style="max-width: 700px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+      <h2 class="jersey" style="font-weight: 400; font-size: 32px; margin: 0; color: #263226;">Sigue la pista</h2>
+      <p style="font-family: 'Jersey 10', monospace; font-size: 17px; color: #55655a; margin: 0;">Entérate de cada actualización antes que nadie &mdash; sin spam, lo prometemos (bueno, casi).</p>
+      <div style="display: flex; gap: 10px; width: 100%; max-width: 420px; flex-wrap: wrap; justify-content: center;">
+        <input type="email" placeholder="tu@email.com" style="flex: 1; min-width: 200px; padding: 11px 16px; border-radius: 999px; border: 2px solid #386656; font-family: 'Jersey 10', monospace; font-size: 16px; background: #fdfaf0;">
+        <button class="cta-btn jersey" style="background-color: {{ctaColor}}; color: #2b1c05; font-size: 17px; padding: 11px 22px; border-radius: 999px; border: 2px solid #14141c; cursor: pointer;">Suscribirme</button>
+      </div>
+      <a href="#" class="jersey" style="display: inline-flex; align-items: center; gap: 8px; background: #14141c; color: #f5efdc; font-size: 17px; padding: 10px 20px; border-radius: 999px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.3 5.3c-1.4-.6-2.8-1-4.3-1.3-.2.4-.4.8-.6 1.3-1.6-.2-3.1-.2-4.7 0-.2-.4-.4-.9-.6-1.3-1.5.3-2.9.7-4.3 1.3C2.4 9.1 1.7 12.8 2 16.5c1.7 1.3 3.4 2 5 2.5.4-.6.8-1.2 1.1-1.9-.6-.2-1.2-.5-1.7-.9.1-.1.3-.2.4-.3 3.3 1.5 6.9 1.5 10.2 0 .1.1.3.2.4.3-.5.4-1.1.6-1.7.9.3.7.7 1.3 1.1 1.9 1.6-.5 3.3-1.3 5-2.5.4-4.3-.7-8-2.5-11.2zM9 14.2c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9zm6 0c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9z"/></svg>
+        Únete al Discord
+      </a>
+    </div>
+  </section>
+
+  <div class="road-divider"></div>
+
+  <!-- CTA FINAL -->
+  <section id="cta-final" style="padding: 80px 48px; text-align: center; background: #14141c;">
+    <h2 class="jersey" style="font-weight: 400; font-size: 40px; margin: 0 0 22px; color: #f5efdc;">¿Listo para perderte un rato?</h2>
+    <a href="#" class="cta-btn jersey" style="display: inline-flex; align-items: center; gap: 10px; background-color: {{ctaColor}}; color: #2b1c05; font-size: 22px; padding: 17px 32px; border-radius: 999px; border: 3px solid #f5efdc; box-shadow: 0 6px 0 #b9822b;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 2c-4 3-6 7-6 11a6 6 0 0 0 12 0c0-4-2-8-6-11z"/><path d="M12 8v13"/></svg>
+      Añadir a la lista de deseos en Steam
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="padding: 44px 48px; background: #0d0d13; color: #cfd6cf;">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div class="placeholder-box" style="width: 32px; height: 32px; border-radius: 6px; font-size: 7px; padding: 2px; opacity: .85;">[logo]</div>
+        <span class="jersey" style="font-size: 20px; color: #f5efdc;">Tortizorza</span>
+      </div>
+      <div style="display: flex; gap: 18px; align-items: center;">
+        <a href="#" style="color: #cfd6cf;"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.7L4.7 22H1.6l8.1-9.3L1 2h7l4.9 6.1L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg></a>
+        <a href="#" style="color: #cfd6cf;"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.3 5.3c-1.4-.6-2.8-1-4.3-1.3-.2.4-.4.8-.6 1.3-1.6-.2-3.1-.2-4.7 0-.2-.4-.4-.9-.6-1.3-1.5.3-2.9.7-4.3 1.3C2.4 9.1 1.7 12.8 2 16.5c1.7 1.3 3.4 2 5 2.5.4-.6.8-1.2 1.1-1.9-.6-.2-1.2-.5-1.7-.9.1-.1.3-.2.4-.3 3.3 1.5 6.9 1.5 10.2 0 .1.1.3.2.4.3-.5.4-1.1.6-1.7.9.3.7.7 1.3 1.1 1.9 1.6-.5 3.3-1.3 5-2.5.4-4.3-.7-8-2.5-11.2zM9 14.2c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9zm6 0c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9z"/></svg></a>
+        <a href="#" style="color: #cfd6cf;"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8c-1-.7-1.6-1.8-1.7-3H12v13.4c0 1.4-1.1 2.5-2.5 2.5S7 17.6 7 16.2s1.1-2.5 2.5-2.5c.3 0 .5 0 .8.1v-2.9c-.3 0-.5-.1-.8-.1-3 0-5.4 2.4-5.4 5.4S6.5 21.6 9.5 21.6s5.4-2.4 5.4-5.4V9.1c1.1.8 2.5 1.3 4 1.3V7.5c-.8 0-1.6-.2-2.3-.6z"/></svg></a>
+      </div>
+      <p style="font-family: 'Jersey 10', monospace; font-size: 15px; margin: 0; color: #9aa39a;">&copy; 2026 Tortizorza. [Aviso legal] &middot; [Política de privacidad]</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"ctaColor":{"editor":"color","default":"#dba43f","options":["#dba43f","#b9822b","#e8bd6a"],"section":"Marca"}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { ctaColor: this.props.ctaColor ?? '#dba43f' };
+  }
+}
+</script>
+</body>
+</html>
