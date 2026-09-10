@@ -10,14 +10,14 @@ if (navToggle && navLinks) {
 
   navLinks.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      if (window.matchMedia('(max-width: 759px)').matches) {
+      if (window.matchMedia('(max-width: 1239px)').matches) {
         navLinks.hidden = true;
         navToggle.setAttribute('aria-expanded', 'false');
       }
     });
   });
 
-  const mq = window.matchMedia('(min-width: 760px)');
+  const mq = window.matchMedia('(min-width: 1240px)');
   const syncNav = () => {
     if (mq.matches) {
       navLinks.hidden = false;

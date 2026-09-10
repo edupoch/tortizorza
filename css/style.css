@@ -438,22 +438,27 @@ button { font-family: inherit; }
 }
 
 @media (min-width: 760px) {
+  .header-cta .btn span { display: inline; }
+
+  .hero-copy h1 { font-size: 52px; }
+
+  .whofor-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Nav collapses to a row only once there's room for all the links — with
+   9 items it wraps and pushes the CTA off-screen below ~1200px. */
+@media (min-width: 1240px) {
   .nav-toggle { display: none; }
   .nav-links {
     position: static;
     flex-direction: row;
-    gap: 32px;
+    gap: 28px;
     border-bottom: none;
     padding: 0;
     background: transparent;
   }
   .nav-links[hidden] { display: flex; }
   .nav-links a { border-bottom: none; padding: 0; }
-  .header-cta .btn span { display: inline; }
-
-  .hero-copy h1 { font-size: 52px; }
-
-  .whofor-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (min-width: 900px) {
