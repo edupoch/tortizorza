@@ -1,0 +1,101 @@
+/* v5 · "Mestura" — cada par de seccións toma a paleta dunha variante:
+   verde (v2), azul (v3) ou rosa (v4). Fondo beixe en todas.
+   Xerado a partir de css/palettes/v2-v4.css; se cambian, rexenerar. */
+
+/* verde ← v2 */
+.site-header,
+.hero,
+#para-quien,
+#prensa,
+#newsletter,
+#contacto,
+.site-footer {
+  --ink-night: #1c2b24;
+  --ink-night-deep: #121d18;
+  --teal: #439371;
+  --teal-deep: #2f6f55;
+  --teal-text: #23513f;
+  --cream: #f5efdc;
+  --cream-alt: #e1ecdf;
+  --cream-card: #fdfaf0;
+  --terracotta: #5fbfe0;
+  --pink-text: #c0505a;
+  --amber: #f39195;
+  --amber-deep: #b8505a;
+  --text: #1f2e27;
+  --text-soft: #354a40;
+  --text-muted: #4f6358;
+  --cta-text: #3b1518;
+  --stripe: #cfe0cf;
+  --card-shadow: #92def6;
+  --frame-shadow: #92def6;
+  --icon-a: #2f6f55;
+  --icon-b: #3aa5cf;
+  --footer-text: #d6e4dc;
+  --footer-muted: #9db3a7;
+  color: var(--text);
+}
+
+/* azul ← v3 */
+#trailer,
+#mundo,
+#estudio,
+#outros-xogos,
+.cta-final {
+  --ink-night: #16243a;
+  --ink-night-deep: #0e1828;
+  --teal: #1f6f94;
+  --teal-deep: #23698a;
+  --teal-text: #16435a;
+  --cream: #f5efdc;
+  --cream-alt: #dcf1f8;
+  --cream-card: #fdfaf0;
+  --terracotta: #e4777c;
+  --pink-text: #b8434d;
+  --amber: #439371;
+  --amber-deep: #2f6f55;
+  --text: #1c2733;
+  --text-soft: #34465a;
+  --text-muted: #4d5f70;
+  --cta-text: #10281d;
+  --stripe: #c6e9f5;
+  --card-shadow: #f39195;
+  --frame-shadow: #f39195;
+  --icon-a: #23698a;
+  --icon-b: #e4777c;
+  --footer-text: #cfdde8;
+  --footer-muted: #95a8b8;
+  color: var(--text);
+}
+
+/* rosa ← v4 */
+#proba-o-prototipo,
+#galeria,
+#faq,
+#presskit {
+  --ink-night: #3a1a1f;
+  --ink-night-deep: #2a1216;
+  --teal: #b8434d;
+  --teal-deep: #c9565f;
+  --teal-text: #9e3a45;
+  --cream: #f5efdc;
+  --cream-alt: #fbe3e2;
+  --cream-card: #fffaf3;
+  --terracotta: #439371;
+  --pink-text: #2f7a5b;
+  --amber: #92def6;
+  --amber-deep: #237aa0;
+  --text: #2d2426;
+  --text-soft: #4a3b3e;
+  --text-muted: #66575a;
+  --cta-text: #0f2e3a;
+  --stripe: #f6cccd;
+  --card-text: #3d2f32;
+  --card-shadow: #439371;
+  --frame-shadow: #439371;
+  --icon-a: #c9565f;
+  --icon-b: #439371;
+  --footer-text: #f0d9da;
+  --footer-muted: #b89a9d;
+  color: var(--text);
+}

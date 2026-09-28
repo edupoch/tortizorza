@@ -1,0 +1,26 @@
+/* v3 · "Ceo" — azul: estrutura e fondos alternos · verde: botóns · rosa: sombras e detalles · beixe: fondo */
+:root {
+  --ink-night: #16243a;
+  --ink-night-deep: #0e1828;
+  --teal: #1f6f94;
+  --teal-deep: #23698a;
+  --teal-text: #16435a;
+  --cream: #f5efdc;
+  --cream-alt: #dcf1f8;
+  --cream-card: #fdfaf0;
+  --terracotta: #e4777c;
+  --pink-text: #b8434d;
+  --amber: #439371;
+  --amber-deep: #2f6f55;
+  --text: #1c2733;
+  --text-soft: #34465a;
+  --text-muted: #4d5f70;
+  --cta-text: #10281d;
+  --stripe: #c6e9f5;
+  --card-shadow: #f39195;
+  --frame-shadow: #f39195;
+  --icon-a: #23698a;
+  --icon-b: #e4777c;
+  --footer-text: #cfdde8;
+  --footer-muted: #95a8b8;
+}

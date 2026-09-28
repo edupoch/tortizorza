@@ -1,0 +1,26 @@
+/* v2 · "Herba" — verde: estrutura e fondos alternos · rosa: botóns · azul: sombras e detalles · beixe: fondo */
+:root {
+  --ink-night: #1c2b24;
+  --ink-night-deep: #121d18;
+  --teal: #439371;
+  --teal-deep: #2f6f55;
+  --teal-text: #23513f;
+  --cream: #f5efdc;
+  --cream-alt: #e1ecdf;
+  --cream-card: #fdfaf0;
+  --terracotta: #5fbfe0;
+  --pink-text: #c0505a;
+  --amber: #f39195;
+  --amber-deep: #b8505a;
+  --text: #1f2e27;
+  --text-soft: #354a40;
+  --text-muted: #4f6358;
+  --cta-text: #3b1518;
+  --stripe: #cfe0cf;
+  --card-shadow: #92def6;
+  --frame-shadow: #92def6;
+  --icon-a: #2f6f55;
+  --icon-b: #3aa5cf;
+  --footer-text: #d6e4dc;
+  --footer-muted: #9db3a7;
+}

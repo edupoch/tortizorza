@@ -1,0 +1,27 @@
+/* v4 · "Flor" — rosa: estrutura e fondos alternos · azul: botóns · verde: sombras e detalles · beixe: fondo */
+:root {
+  --ink-night: #3a1a1f;
+  --ink-night-deep: #2a1216;
+  --teal: #b8434d;
+  --teal-deep: #c9565f;
+  --teal-text: #9e3a45;
+  --cream: #f5efdc;
+  --cream-alt: #fbe3e2;
+  --cream-card: #fffaf3;
+  --terracotta: #439371;
+  --pink-text: #2f7a5b;
+  --amber: #92def6;
+  --amber-deep: #237aa0;
+  --text: #2d2426;
+  --text-soft: #4a3b3e;
+  --text-muted: #66575a;
+  --cta-text: #0f2e3a;
+  --stripe: #f6cccd;
+  --card-text: #3d2f32;
+  --card-shadow: #439371;
+  --frame-shadow: #439371;
+  --icon-a: #c9565f;
+  --icon-b: #439371;
+  --footer-text: #f0d9da;
+  --footer-muted: #b89a9d;
+}
