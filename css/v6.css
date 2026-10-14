@@ -1,0 +1,50 @@
+/* v6 · Axustes sobre style.css (cárgase despois). style.css non se toca
+   porque /v1–/v5 están conxeladas e tamén o usan. */
+
+/* Textos máis grandes: Jersey 10 lese pequena cos textos novos. */
+.hero-copy .lead { font-size: 24px; }
+.feature-copy p,
+.prototype-wrap p,
+.estudio-copy p { font-size: 22px; }
+.trailer-sub,
+.gallery-note,
+.otros-juegos-sub { font-size: 21px; }
+.game-card-copy p,
+.whofor-card p,
+.presskit-wrap p,
+.newsletter-wrap p,
+.prensa-sub,
+.faq-item p { font-size: 20px; }
+.newsletter-form input { font-size: 19px; }
+.game-card-tag { font-size: 15px; }
+.legal { font-size: 16px; }
+
+/* Párrafos máis suaves: Jersey 10 só ten un peso e a cor de texto escura
+   fai que parezan en negra. Mestúrase co beige (contraste ≥ 4.5:1 en todas
+   as seccións). */
+.hero-copy .lead,
+.feature-copy p,
+.prototype-wrap p,
+.estudio-copy p,
+.game-card-copy p,
+.whofor-card p,
+.trailer-sub,
+.gallery-note,
+.otros-juegos-sub,
+.presskit-wrap p,
+.newsletter-wrap p,
+.prensa-sub,
+.faq-item p {
+  color: color-mix(in srgb, var(--text-soft) 80%, var(--cream));
+}
+.hero-copy .lead strong { color: var(--text); }
+
+/* Nomes e ligazóns dentro dos párrafos do estudo. */
+.estudio-copy p strong { color: var(--text); }
+.estudio-copy p a {
+  color: var(--teal-text);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+.estudio-copy p a:hover { color: var(--teal); }

@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Florilexio — Tortizorza</title>
-  <meta name="description" content="Florilexio é unha aventura de exploración e recolleita de Tortizorza. Cada herba agocha un segredo. Engádeo á túa listaxe de desexos en Steam.">
+  <meta name="description" content="Florilexio é unha aventura de exploración e recolleita de Tortizorza. Busca as herbas de San Xoán e completa o teu florilexio. Apúntate á newsletter para estar ao día.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/palettes/v5.css">
+  <link rel="stylesheet" href="css/v6.css">
 </head>
 <body>
 
@@ -29,16 +30,15 @@
       <a href="#galeria">Galería</a>
       <a href="#estudio">Estudio</a>
       <a href="#outros-xogos">Outros xogos</a>
-      <a href="#faq">FAQ</a>
       <a href="#presskit">Press kit</a>
       <a href="#newsletter">Newsletter</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
     <div class="header-cta">
-      <a href="#" class="btn btn--cta btn--sm">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.03 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
-        <span>Wishlist</span>
+      <a href="#newsletter" class="btn btn--cta btn--sm">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><rect x="2" y="4" width="20" height="16"/><path d="M2 6l10 7 10-7"/></svg>
+        <span>Newsletter</span>
       </a>
     </div>
   </header>
@@ -49,15 +49,15 @@
     <section class="hero">
       <div class="container">
         <div class="hero-copy">
-          <span class="hero-tag">psst&hellip; hai algo entre a herba</span>
-          <h1>Cada herba agocha un segredo.<br>Algunhas tamén morden.</h1>
-          <p class="lead">Florilexio é unha aventura de exploración e recolleita para quen saíu unha vez a por camomila e volveu tres horas despois cunha maldición e un amigo novo.</p>
+          <!-- OCULTO: <span class="hero-tag">psst&hellip; hai algo entre a herba</span> -->
+          <h1>Que a maxia das flores<br>guíe o teu camiño</h1>
+          <p class="lead">Busca as herbas de San Xoán e completa o teu florilexio nesta <strong>aventura narrativa</strong> onde os saberes e ritos tradicionais do solsticio de verán fían cada etapa do teu percorrido.<br><br>Se Dredge navegase polos lagos de Hyrule salvaría o mundo cun feitizo vexetal.</p>
           <div class="hero-cta-wrap">
-            <a href="#" class="btn btn--cta btn--lg">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.03 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
-              Engadir á listaxe de desexos en Steam
+            <a href="#newsletter" class="btn btn--cta btn--lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><rect x="2" y="4" width="20" height="16"/><path d="M2 6l10 7 10-7"/></svg>
+              Apúntate á newsletter
             </a>
-            <span class="hero-note">[Dispoñible proximamente en Steam &mdash; data por confirmar]</span>
+            <!-- OCULTO: <span class="hero-note">[Dispoñible proximamente en Steam &mdash; data por confirmar]</span> -->
           </div>
         </div>
         <div class="shot-frame">
@@ -68,7 +68,7 @@
 
     <div class="road-divider"></div>
 
-    <!-- TRAILER -->
+    <!-- OCULTO (Ver antes de crer): descomentar para recuperar
     <section class="section section--alt" id="trailer">
       <div class="container trailer-wrap">
         <h2 class="section-title">Ver antes de crer</h2>
@@ -79,40 +79,48 @@
         </div>
       </div>
     </section>
+    -->
 
     <!-- MUNDO Y MECÁNICAS -->
-    <section class="section" id="mundo">
+    <section class="section section--alt" id="mundo">
       <div class="container">
-        <h2 class="section-title mundo-title">Un mundo feito para perderte nel</h2>
+        <h2 class="section-title mundo-title">A resposta está nas plantas</h2>
 
         <div class="feature-row">
           <div class="feature-media shot-frame">
             <img src="images/screenshots/parque-dia.png" alt="Captura de Florilexio: un parque durante o día, cunha fonte e testos de herbas" width="1279" height="717" loading="lazy">
           </div>
           <div class="feature-copy">
-            <h3>Cada sebe agocha algo</h3>
-            <p>O mapa de Florilexio non che colle da man. Detrás de cada muro de pedra, cada claro raro e cada porta que &laquo;seguro que non leva a ningures&raquo; hai unha historia agardando &mdash; e ás veces, alguén agardando a que deixes de fisgar.</p>
-            <a href="#" class="btn btn--cta btn--md">Wishlist en Steam</a>
+            <h3>A auga das fontes contén segredos</h3>
+            <p>Completa o teu herbario coa sabedoría que se agocha ao teu redor.</p>
           </div>
         </div>
 
         <div class="feature-row feature-row--reverse">
           <div class="feature-copy">
-            <h3>Sáes por herba de San Xoán. Volves con outra cousa.</h3>
-            <p>Recolle, seca, mestura, ou simplemente cárgaa no cesto mentres decides se de verdade queres saber para que serve. O ciclo de saír, explorar e volver premia a curiosidade tanto coma a paciencia.</p>
-            <a href="#" class="btn btn--cta btn--md">Wishlist en Steam</a>
+            <h3>Cada herba co seu poder</h3>
+            <p>Aprende a invocar a maxia do San Xoán.</p>
           </div>
-          <div class="feature-media shot-frame">
-            <img src="images/screenshots/componer-ramo.png" alt="Captura de Florilexio: a pantalla de compoñer un ramo de herbas recollidas" width="1279" height="717" loading="lazy">
-          </div>
+          <div class="feature-media placeholder-box" style="aspect-ratio:16/9;">[captura &mdash; sistema de maxia]</div>
         </div>
 
         <div class="feature-row">
-          <div class="feature-media placeholder-box" style="aspect-ratio:16/9;">[captura &mdash; sistema de maxia]</div>
+          <div class="feature-media shot-frame">
+            <img src="images/screenshots/componer-ramo.png" alt="Captura de Florilexio: a pantalla de compoñer un ramo de herbas recollidas" width="1279" height="717" loading="lazy">
+          </div>
           <div class="feature-copy">
-            <h3>A maxia ten efectos secundarios. Normalmente cómicos.</h3>
-            <p>Cada feitizo mal calculado, cada ingrediente confundido e cada segredo desenterrado ten consecuencias &mdash; case nunca as que agardabas, case sempre motivo dunha boa anécdota.</p>
-            <a href="#" class="btn btn--cta btn--md">Wishlist en Steam</a>
+            <h3>Non perdas tempo!</h3>
+            <p>Explora, corta, cataloga&hellip; Fai o teu cacho antes de que acabe o día para recibir a protección das herbas.</p>
+          </div>
+        </div>
+
+        <div class="feature-row feature-row--reverse">
+          <div class="feature-copy">
+            <h3>Aprende a escoitar</h3>
+            <p>Os saberes máxicos están alí onde menos os buscas.</p>
+          </div>
+          <div class="feature-media shot-frame">
+            <img src="images/screenshots/calle-noche.png" alt="Captura de Florilexio: unha rúa da vila de noite, cunha burbulla de diálogo listando nomes de herbas" width="1279" height="717" loading="lazy">
           </div>
         </div>
       </div>
@@ -121,8 +129,8 @@
     <!-- PROBA O PROTOTIPO -->
     <section class="section section--alt prototype-wrap-outer" id="proba-o-prototipo">
       <div class="container prototype-wrap">
-        <h2 class="section-title">Non queres agardar? Xoga xa a un anticipo</h2>
-        <p>&laquo;Un pequeno Florilexio&raquo; é o prototipo gratuíto que sentou as bases do xogo completo &mdash; dispoñible agora mesmo en itch.io, sen esperas nin listaxes de desexos.</p>
+        <h2 class="section-title">Antes da planta veu a semente. Proba o prototipo</h2>
+        <p>&ldquo;Un pequeno florilexio&rdquo; é a primeira versión que fixemos do xogo, un prototipo creado para a Fuck Capitalism Jam de 2026. Se queres coñecer o universo de Florilexio sen esperas nin listas de desexos, está dispoñible de forma gratuíta en itch.io.</p>
         <div class="shot-frame">
           <img src="images/other-games/florilexio-prototipo-shot.png" alt="Captura de Un pequeno Florilexio, o prototipo xogable en itch.io" width="1279" height="717" loading="lazy">
         </div>
@@ -146,7 +154,7 @@
       </div>
     </section>
 
-    <!-- PARA QUIÉN -->
+    <!-- OCULTO (Isto sóache?): descomentar para recuperar
     <section class="section section--alt" id="para-quien">
       <div class="container" style="max-width:1100px;">
         <h2 class="section-title">Isto sóache?</h2>
@@ -163,8 +171,9 @@
         <p class="whofor-closing">Se algunha das dúas che sacou un sorriso, Florilexio é para ti.</p>
       </div>
     </section>
+    -->
 
-    <!-- PRENSA -->
+    <!-- OCULTO (O que din de Florilexio): descomentar para recuperar
     <section class="section" id="prensa">
       <div class="container prensa-wrap">
         <h2 class="section-title" style="font-size:32px;margin-bottom:6px;">O que din de Florilexio</h2>
@@ -176,14 +185,17 @@
         </div>
       </div>
     </section>
+    -->
 
     <!-- ESTUDIO -->
     <section class="section section--alt" id="estudio">
       <div class="container estudio-grid" style="max-width:1100px;">
         <div class="placeholder-box estudio-photo">[foto do equipo]</div>
         <div class="estudio-copy">
-          <h2>Somos Tortizorza</h2>
-          <p>[Aquí vai a historia real: quen sodes, cantos sodes, onde estades, e por que decidistes que un xogo sobre recoller herba de San Xoán con moi mala sorte era unha boa idea. Esta sección funciona mellor se sodes vós de verdade &mdash; co mesmo ton e humor que o resto da web &mdash; e non unha biografía xenérica de estudo.]</p>
+          <h2>&ldquo;Florilexio&rdquo;, un proxecto de Tortizorza</h2>
+          <p>Tortizorza é unha mestura imposible e a mellor tapa posible. Tortizorza Estudo Entertaiment??? somos <strong>Roig</strong>, que se encarga da programación e do universo estético de todo o que facemos; <strong>Poch</strong>, compositor, programador e responsable do deseño sonoro, e <strong>Bita</strong>, que xunta letras que forman historias.</p>
+          <p>Con esta estrutura en triángulo (unha ración de tortilla) iniciámonos como equipo na Fuck Capitalism 2025 con <a href="https://aroig.itch.io/turistifyer" target="_blank" rel="noopener">Turistifyer</a>, un convite a trollear as empresas e caseiros estafadores que fan do dereito á vivenda unha misión imposible. Antes, Roig e Poch xa traballaran en común en <a href="https://aroig.itch.io/destrucciones-martinez" target="_blank" rel="noopener">Destrucciones Martínez</a>.</p>
+          <p>Nese equilibrio triangular desenvolvimos tamén <a href="https://aroig.itch.io/augardentia" target="_blank" rel="noopener">Augardentía</a>, o xogo co que gañamos a Game Jam &ldquo;Dende o Galego, con Humor&rdquo; da Fundación Carlos Casares en decembro de 2025, e &ldquo;<a href="https://aroig.itch.io/un-pequeno-florilexio" target="_blank" rel="noopener">Un pequeno florilexio</a>&rdquo;, o prototipo co que nos presentamos á Fuck Capitalismo de 2026 e que é o punto de partida para o desenvolvemento de &ldquo;Florilexio&rdquo;.</p>
         </div>
       </div>
     </section>
@@ -217,7 +229,7 @@
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- OCULTO (Preguntas frecuentes): descomentar para recuperar
     <section class="section section--alt" id="faq">
       <div class="container faq-wrap">
         <h2 class="section-title">Preguntas frecuentes</h2>
@@ -241,28 +253,36 @@
         </div>
       </div>
     </section>
+    -->
 
     <!-- PRESS KIT -->
-    <section class="section presskit-wrap" id="presskit">
-      <h2>Es prensa ou creador de contido?</h2>
-      <p>Descarga capturas en alta resolución, o logo do estudo e unha folla de datos do xogo.</p>
-      <a href="#" class="btn btn--ghost">Descargar press kit</a>
+    <section class="section section--alt" id="presskit">
+      <div class="container presskit-wrap">
+        <h2>Kit de prensa</h2>
+        <p>Aquí podes atopar imaxes de &ldquo;Florilexio&rdquo; para descarga,<br>notas de prensa e toda a info actualizada en relación ao xogo.</p>
+        <a href="#" class="btn btn--ghost">Descargar press kit</a>
+      </div>
     </section>
 
     <!-- NEWSLETTER -->
     <section class="section section--alt" id="newsletter">
       <div class="container newsletter-wrap">
-        <h2>Segue a pista</h2>
-        <p>Entérate de cada actualización antes que ninguén &mdash; sen spam, prometémolo (bo, case).</p>
+        <h2>Síguenos a pista</h2>
+        <p>Enche o formulario e apúntate á newsletter<br>para estar ao día do que acontece con &ldquo;Florilexio&rdquo;.</p>
         <form class="newsletter-form" action="#" method="post">
           <label for="email" style="position:absolute;left:-9999px;">Correo electrónico</label>
           <input type="email" id="email" name="email" placeholder="nome@email.com" required>
-          <button type="submit" class="btn btn--cta btn--md">Subscribirme</button>
+          <button type="submit" class="btn btn--cta btn--md">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><rect x="2" y="4" width="20" height="16"/><path d="M2 6l10 7 10-7"/></svg>
+            Subscribirme
+          </button>
         </form>
+        <!-- OCULTO (Discord)
         <a href="#" class="btn btn--dark">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.3 5.3c-1.4-.6-2.8-1-4.3-1.3-.2.4-.4.8-.6 1.3-1.6-.2-3.1-.2-4.7 0-.2-.4-.4-.9-.6-1.3-1.5.3-2.9.7-4.3 1.3C2.4 9.1 1.7 12.8 2 16.5c1.7 1.3 3.4 2 5 2.5.4-.6.8-1.2 1.1-1.9-.6-.2-1.2-.5-1.7-.9.1-.1.3-.2.4-.3 3.3 1.5 6.9 1.5 10.2 0 .1.1.3.2.4.3-.5.4-1.1.6-1.7.9.3.7.7 1.3 1.1 1.9 1.6-.5 3.3-1.3 5-2.5.4-4.3-.7-8-2.5-11.2zM9 14.2c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9zm6 0c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9z"/></svg>
           Únete ao Discord
         </a>
+        -->
       </div>
     </section>
 
@@ -278,10 +298,10 @@
     <!-- CTA FINAL -->
     <section class="cta-final">
       <div class="container">
-        <h2>Preparado para perderte un anaco?</h2>
-        <a href="#" class="btn btn--cta btn--lg">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.03 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
-          Engadir á listaxe de desexos en Steam
+        <h2>Queres meterte nun xardín?</h2>
+        <a href="#newsletter" class="btn btn--cta btn--lg">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><rect x="2" y="4" width="20" height="16"/><path d="M2 6l10 7 10-7"/></svg>
+          Preme e apúntate á nosa newsletter
         </a>
       </div>
     </section>
@@ -294,11 +314,13 @@
         <div class="placeholder-box" style="width:32px;height:32px;border-radius:6px;font-size:7px;padding:2px;opacity:.85;">[logo]</div>
         <span>Tortizorza</span>
       </div>
+      <!-- OCULTO (redes sociais)
       <div class="social-links">
         <a href="#" aria-label="X (Twitter)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.7L4.7 22H1.6l8.1-9.3L1 2h7l4.9 6.1L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg></a>
         <a href="#" aria-label="Discord"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.3 5.3c-1.4-.6-2.8-1-4.3-1.3-.2.4-.4.8-.6 1.3-1.6-.2-3.1-.2-4.7 0-.2-.4-.4-.9-.6-1.3-1.5.3-2.9.7-4.3 1.3C2.4 9.1 1.7 12.8 2 16.5c1.7 1.3 3.4 2 5 2.5.4-.6.8-1.2 1.1-1.9-.6-.2-1.2-.5-1.7-.9.1-.1.3-.2.4-.3 3.3 1.5 6.9 1.5 10.2 0 .1.1.3.2.4.3-.5.4-1.1.6-1.7.9.3.7.7 1.3 1.1 1.9 1.6-.5 3.3-1.3 5-2.5.4-4.3-.7-8-2.5-11.2zM9 14.2c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9zm6 0c-.9 0-1.6-.9-1.6-1.9s.7-1.9 1.6-1.9 1.6.9 1.6 1.9-.7 1.9-1.6 1.9z"/></svg></a>
         <a href="#" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8c-1-.7-1.6-1.8-1.7-3H12v13.4c0 1.4-1.1 2.5-2.5 2.5S7 17.6 7 16.2s1.1-2.5 2.5-2.5c.3 0 .5 0 .8.1v-2.9c-.3 0-.5-.1-.8-.1-3 0-5.4 2.4-5.4 5.4S6.5 21.6 9.5 21.6s5.4-2.4 5.4-5.4V9.1c1.1.8 2.5 1.3 4 1.3V7.5c-.8 0-1.6-.2-2.3-.6z"/></svg></a>
       </div>
+      -->
       <p class="legal">&copy; 2026 Tortizorza. [Aviso legal] &middot; [Política de privacidade]</p>
     </div>
   </footer>
