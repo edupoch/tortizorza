@@ -15,7 +15,7 @@ if (form && status) {
 
   const messageFor = (data) => {
     if (data.result === 'success') {
-      return 'Xa case está! Revisa o teu correo e confirma a subscrición.';
+      return 'Feito! Xa estás na nosa newsletter.';
     }
     const msg = String(data.msg || '').toLowerCase();
     if (msg.includes('already') || msg.includes('ya está') || msg.includes('ya es')) {
