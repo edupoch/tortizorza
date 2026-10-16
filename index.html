@@ -16,7 +16,7 @@
 
   <header class="site-header">
     <div class="brand">
-      <div class="placeholder-box" style="width:40px;height:40px;border-radius:8px;font-size:8px;padding:2px;">[logo]</div>
+      <!-- OCULTO (logo de proba): <div class="placeholder-box" style="width:40px;height:40px;border-radius:8px;font-size:8px;padding:2px;">[logo]</div> -->
       <span class="brand-name">Florilexio</span>
     </div>
 
@@ -27,12 +27,11 @@
     <nav id="navLinks" class="nav-links" hidden>
       <a href="#mundo">O mundo</a>
       <a href="#proba-o-prototipo">Proba o prototipo</a>
-      <a href="#galeria">Galería</a>
       <a href="#estudio">Estudio</a>
       <a href="#outros-xogos">Outros xogos</a>
       <a href="#presskit">Press kit</a>
       <a href="#newsletter">Newsletter</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#escribenos">Contacto</a>
     </nav>
 
     <div class="header-cta">
@@ -92,14 +91,14 @@
           </div>
           <div class="feature-copy">
             <h3>A auga das fontes contén segredos</h3>
-            <p>Completa o teu herbario coa sabedoría que se agocha ao teu redor.</p>
+            <p>Completa o teu herbario coa sabedoría que se agocha ao teu redor. Aprende a escoitar e os saberes aparecerán onde menos os buscas.</p>
           </div>
         </div>
 
         <div class="feature-row feature-row--reverse">
           <div class="feature-copy">
             <h3>Cada herba co seu poder</h3>
-            <p>Aprende a invocar a maxia do San Xoán.</p>
+            <p>A maxia do San Xoán está no teu camiño. Busca as propiedades das plantas que medran contigo e cataloga os coñecementos adquiridos.</p>
           </div>
           <div class="feature-media placeholder-box" style="aspect-ratio:16/9;">[captura &mdash; sistema de maxia]</div>
         </div>
@@ -110,19 +109,10 @@
           </div>
           <div class="feature-copy">
             <h3>Non perdas tempo!</h3>
-            <p>Explora, corta, cataloga&hellip; Fai o teu cacho antes de que acabe o día para recibir a protección das herbas.</p>
+            <p>Explora, corta, mezcla&hellip; Fai o teu cacho antes de que acabe o día para recibir a protección das herbas e espanta os males do teu camiño.</p>
           </div>
         </div>
 
-        <div class="feature-row feature-row--reverse">
-          <div class="feature-copy">
-            <h3>Aprende a escoitar</h3>
-            <p>Os saberes máxicos están alí onde menos os buscas.</p>
-          </div>
-          <div class="feature-media shot-frame">
-            <img src="images/screenshots/calle-noche.png" alt="Captura de Florilexio: unha rúa da vila de noite, cunha burbulla de diálogo listando nomes de herbas" width="1279" height="717" loading="lazy">
-          </div>
-        </div>
       </div>
     </section>
 
@@ -141,7 +131,7 @@
       </div>
     </section>
 
-    <!-- GALERÍA -->
+    <!-- OCULTO (Unha ollada ao mundo de Florilexio): descomentar para recuperar
     <section class="section" id="galeria">
       <div class="container">
         <h2 class="section-title">Unha ollada ao mundo de Florilexio</h2>
@@ -153,6 +143,7 @@
         <p class="gallery-note">+ máis capturas moi pronto</p>
       </div>
     </section>
+    -->
 
     <!-- OCULTO (Isto sóache?): descomentar para recuperar
     <section class="section section--alt" id="para-quien">
@@ -190,7 +181,9 @@
     <!-- ESTUDIO -->
     <section class="section section--alt" id="estudio">
       <div class="container estudio-grid" style="max-width:1100px;">
-        <div class="placeholder-box estudio-photo">[foto do equipo]</div>
+        <div class="shot-frame estudio-photo">
+          <img src="images/team.jpg" alt="O equipo de Tortizorza: tres persoas posando xuntas nunha feira ao aire libre" width="780" height="470" loading="lazy">
+        </div>
         <div class="estudio-copy">
           <h2>&ldquo;Florilexio&rdquo;, un proxecto de Tortizorza</h2>
           <p>Tortizorza é unha mestura imposible e a mellor tapa posible. Tortizorza Estudo Entertaiment??? somos <strong>Roig</strong>, que se encarga da programación e do universo estético de todo o que facemos; <strong>Poch</strong>, compositor, programador e responsable do deseño sonoro, e <strong>Bita</strong>, que xunta letras que forman historias.</p>
@@ -289,22 +282,16 @@
       </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section class="section presskit-wrap" id="contacto">
-      <h2>Queres falar con nós?</h2>
-      <p>Para prensa, colaboracións ou calquera outra cousa, escríbenos.</p>
-      <a href="mailto:ola@tortizorza.gal" class="btn btn--ghost">ola@tortizorza.gal</a>
-    </section>
-
     <div class="road-divider"></div>
 
     <!-- CTA FINAL -->
-    <section class="cta-final">
+    <section class="cta-final" id="escribenos">
       <div class="container">
         <h2>Queres meterte nun xardín?</h2>
-        <a href="#newsletter" class="btn btn--cta btn--lg">
+        <p>Escríbenos para máis info, colaboracións ou calquera outra cousa que se che ocorra.</p>
+        <a href="mailto:ola@florilexio.gal" class="btn btn--cta btn--lg">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><rect x="2" y="4" width="20" height="16"/><path d="M2 6l10 7 10-7"/></svg>
-          Preme e apúntate á nosa newsletter
+          ola@florilexio.gal
         </a>
       </div>
     </section>
@@ -314,7 +301,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="placeholder-box" style="width:32px;height:32px;border-radius:6px;font-size:7px;padding:2px;opacity:.85;">[logo]</div>
+        <!-- OCULTO (logo de proba): <div class="placeholder-box" style="width:32px;height:32px;border-radius:6px;font-size:7px;padding:2px;opacity:.85;">[logo]</div> -->
         <span>Tortizorza</span>
       </div>
       <!-- OCULTO (redes sociais)
