@@ -120,3 +120,9 @@
   --icon-b: #3aa5cf;
   color: var(--text);
 }
+
+/* "A resposta está nas plantas" en móbil (unha columna): a imaxe sempre
+   antes do texto, tamén nas filas --reverse. */
+@media (max-width: 899px) {
+  .feature-row .feature-media { order: -1; }
+}
