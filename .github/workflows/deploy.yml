@@ -14,7 +14,7 @@ name: Deploy por SSH
 #                    ssh-keyscan no momento (menos seguro)
 #
 # DEPLOY_PATH é exclusivo desta web: rsync --delete borra alí o que non
-# estea en _site.
+# estea en _site, agás os ficheiros ocultos da raíz (.htaccess, .well-known…).
 
 on:
   push:
@@ -67,6 +67,8 @@ jobs:
           case "$DEPLOY_PATH" in
             ""|"/"|"~"|"."|"~/") echo "::error::DEPLOY_PATH baleiro ou perigoso"; exit 1 ;;
           esac
-          rsync -rlvz --delete --checksum \
+          # P /.*: non borrar ficheiros ocultos da raíz que xestiona o
+          # hosting (.htaccess, .well-known/ para os certificados…).
+          rsync -rlvz --delete --checksum --filter='P /.*' \
             -e "ssh -i ~/.ssh/id_deploy -p ${SSH_PORT:-22} -o StrictHostKeyChecking=yes" \
             _site/ "$SSH_USER@$SSH_HOST:${DEPLOY_PATH%/}/"
