@@ -48,3 +48,9 @@
   text-underline-offset: 3px;
 }
 .estudio-copy p a:hover { color: var(--teal); }
+
+/* Mensaxe do formulario da newsletter. */
+.newsletter-status { min-height: 1.5em; font-size: 19px; }
+.newsletter-status[data-kind="success"] { color: var(--teal-text); }
+.newsletter-status[data-kind="error"] { color: var(--pink-text); }
+.newsletter-form button[disabled] { opacity: .6; cursor: wait; }
