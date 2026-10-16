@@ -38,7 +38,7 @@ jobs:
       - name: Preparar ficheiros públicos
         run: |
           mkdir _site
-          cp -r index.html css images js v[0-9]* _site/
+          cp -r index.html css images js files v[0-9]* _site/
 
       - name: Configurar SSH
         env:

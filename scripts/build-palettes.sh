@@ -9,7 +9,7 @@ cd "$(dirname "$0")/.."
 v=6
 mkdir -p "v$v"
 sed -E \
-  -e 's#(href|src)="(css|images|js)/#\1="../\2/#g' \
+  -e 's#(href|src)="(css|images|js|files)/#\1="../\2/#g' \
   -e "s#(<meta name=\"viewport\"[^>]*>)#\1\n  <meta name=\"robots\" content=\"noindex\">#" \
   -e "s#<title>(.*)</title>#<title>\1 (v$v)</title>#" \
   index.html > "v$v/index.html"
